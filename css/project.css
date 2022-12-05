@@ -1,0 +1,316 @@
+/* Start Variables */
+:root{
+    --first-color: hsl(171, 66%, 44%) ;
+    --seond-color: hsl(233, 100%, 69%) ;
+    --thrid-color: hsl(210, 10%, 33%) ;
+    --four-color: hsl(201, 11%, 66%) ;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 766px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* End Global Rules */
+
+/* start header */
+header .container .logo{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+header .container .logo img{
+    width: fit-content;
+    max-width: 100%;
+}
+/*header .container .logo p{
+    text-align: center;
+    transform: translateY(-250px);
+    z-index: 1;
+}*/
+header .container .text h1{
+    text-align: center;
+}
+header .container .text p{
+    text-align: center;
+    color: var(--four-color);
+}
+header .container .buttons{
+    display: flex;
+    justify-content: center;
+}
+header .container .buttons .mac{
+    padding-left: 20px;
+    text-align: center;
+    background-color: var(--seond-color);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 5px;
+}
+@media(max-width:767px){
+    header .container .buttons .mac{
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+}
+header .container .buttons .ios{
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color: var(--first-color);
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    margin-right: 5px;
+}
+/* end header */
+/* start setion */
+section .container .first-text{
+    padding-top: 50px;
+}
+section .container .first-text h1{
+    text-align: center;
+    padding-top: 50px;
+}
+section .container .first-text p{
+    text-align: center;
+    color: var(--four-color);
+}
+section .container .second-text{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    padding-top: 50px;
+    gap: 120px;
+}
+section .container .second-text .img img{
+    max-width: 100%;
+    width: fit-content;
+}
+@media(max-width:992px){
+    section .container .second-text{
+        display: block;
+    }
+}
+@media(max-width:767px){
+section .container .text{
+    display: block;
+    text-align: center;
+}
+}
+@media(max-width:1200px){
+    section .container .second-text .text{
+        text-align: center;
+    }
+}
+section .container .second-text .text{
+    padding-top: 30px;
+}
+section .container .second-text .text .QuickSearch h1{
+    padding-top: 10px;
+}
+section .container .second-text .text .QuickSearch p{
+    color: var(--four-color);
+    line-height: 2;
+}
+section .container .second-text .text .iCloudsync h1{
+    padding-top: 20px;
+}
+section .container .second-text .text .iCloudsync p{
+    color: var(--four-color);
+    line-height: 2;
+}
+section .container .second-text .text .CompleteHistory h1{
+    padding-top: 20px;
+}
+section .container .second-text .text .CompleteHistory p{
+    color: var(--four-color);
+    line-height: 2;
+}
+/* end section */
+/* start nav */
+nav .container .Access-Clipboard-anywhere h1{
+    text-align: center;
+    padding-top: 100px;
+}
+nav .container .Access-Clipboard-anywhere p{
+    text-align: center;
+    color: var(--four-color);
+}
+nav .container .img img{
+    padding-top: 100px;
+    max-width: 100%;
+    width: fit-content;
+}
+nav .container .Supercharge-your-workflow h1{
+    text-align: center;
+    padding-top: 150px;
+}
+nav .container .Supercharge-your-workflow p{
+    text-align: center;
+    color: var(--four-color);
+}
+nav .container .article{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    text-align: center;
+    padding-top: 150px;
+}
+nav .container .article h1 + p{
+    color: var(--four-color);
+}
+nav .container .company-logo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+/* end nav */
+/* start footer */
+footer .container .Clipboard-for-iOS-and-Mac-OS h1{
+    text-align: center;
+    padding-top: 100px;
+}
+footer .container .Clipboard-for-iOS-and-Mac-OS p{
+    color: var(--four-color);
+    text-align: center;
+}
+footer .container .buttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+footer .container .buttons .ios{
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color: var(--first-color);
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    margin-right: 5px;
+}
+footer .container .buttons .mac{
+    padding-left: 20px;
+    text-align: center;
+    background-color: var(--seond-color);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 30px;
+    padding-top: 15px;
+    margin-left: 5px;
+}
+footer .final {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    padding-top:100px ;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    padding-left: 150px;
+    background-color: #eee;
+}
+footer .final .contact span{
+    display: block;
+}
+footer .final .contact span:last-child{
+    padding-top: 30px;
+}
+footer .privacy span{
+    display: block;
+}
+@media(max-width:782px){
+    .privacy{
+        padding-top: 100px;
+    }
+}
+footer .privacy span:last-child{
+    padding-top: 30px;
+}
+footer .soc{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media(max-width:1182px){
+    footer .soc{
+        padding-top: 100px;
+    }
+}
+@media(max-width:983px) {
+    .instal{
+        padding-top: 100px;
+    }
+}
+@media(max-width:583px){
+    .contact{
+        padding-top: 100px;
+    }
+}
+@media(max-width:767px){
+    footer .container .buttons .mac{
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+    footer .final {
+        padding: 0px;
+        margin: 0px;
+    }
+    footer .final .logo{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .contact{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .privacy{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .instal{
+        text-align: center;
+        padding-top: 100px;
+    }
+}
+/* end footer  */
